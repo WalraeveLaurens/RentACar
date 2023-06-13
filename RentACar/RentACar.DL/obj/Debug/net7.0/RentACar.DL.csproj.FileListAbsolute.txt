@@ -1,0 +1,15 @@
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\bin\Debug\net7.0\RentACar.DL.deps.json
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\bin\Debug\net7.0\RentACar.DL.dll
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\bin\Debug\net7.0\RentACar.DL.pdb
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\bin\Debug\net7.0\RentACar.BL.dll
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\bin\Debug\net7.0\RentACar.BL.pdb
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.csproj.AssemblyReference.cache
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.AssemblyInfoInputs.cache
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.AssemblyInfo.cs
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.csproj.CoreCompileInputs.cache
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.csproj.CopyComplete
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.dll
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\refint\RentACar.DL.dll
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\RentACar.DL.pdb
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RentACar.DL\obj\Debug\net7.0\ref\RentACar.DL.dll

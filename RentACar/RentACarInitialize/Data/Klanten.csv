@@ -1,0 +1,52 @@
+Klantnummer,Voornaam,Naam,Straat,Straatnummer,Busnummer,Plaats,Postcode,BTW-nummer
+A-387-051,Arno,Vantieghem,Kerkstraat,10,,Amsterdam,1000,NL076543210B01
+A-387-052,Thomas,Bakker,Dorpstraat,15,,Rotterdam,2000,NL098765432B02
+A-387-053,Sanne,Jansen,Schoolweg,20,2,Utrecht,3000,NL012345678B03
+A-387-054,Mark,De Vries,Prinsengracht,25,,Den Haag,4000,NL045678901B04
+A-387-055,Michelle,Kwok,Hoofdstraat,30,,Eindhoven,5000,NL023456789B05
+A-387-056,Ruben,Vos,Willemstraat,35,1,Groningen,6000,NL056789012B06
+A-387-057,Lisa,Smit,Beatrixlaan,40,,Amersfoort,7000,NL034567890B07
+A-387-058,Tim,Van der Meer,Kerkplein,45,,Haarlem,8000,NL078901234B08
+A-387-059,Eva,Hoekstra,Dorpsplein,50,,Breda,9000,NL067890123B09
+A-387-060,Daan,Bosch,Dorpsstraat,55,,Maastricht,10000,NL056789012B10
+A-387-061,Anna,Van Gogh,Binnenweg,60,,Leiden,11000,NL045678901B11
+A-387-062,Rick,Veenstra,Hoofdweg,65,,Enschede,12000,NL034567890B12
+A-387-063,Marieke,De Boer,Wilhelminastraat,70,,Tilburg,13000,NL023456789B13
+A-387-064,Jasper,Hendriks,Van Limburg Stirumstraat,75,,Nijmegen,14000,NL012345678B14
+A-387-065,Linda,Van der Linden,Hoofdplein,80,,Arnhem,15000,NL098765432B15
+A-387-066,Joost,Scholten,Julianalaan,85,,Zwolle,16000,NL076543210B16
+A-387-067,Sophie,Kramer,Dorpsweg,90,,Almere,17000,NL067890123B17
+A-387-068,Robin,Verhoeven,Willem de Zwijgerlaan,95,,Apeldoorn,18000,NL078901234B18
+A-387-069,Femke,De Jong,Kerkhoflaan,100,,Den Bosch,19000,NL045678901B19
+A-387-070,Martijn,Visser,Havenstraat,105,,Leeuwarden,20000,NL056789012B20
+A-387-071,Ingrid,Dijkstra,Beukenlaan,110,,Hoorn,21000,NL034567890B21
+A-387-072,Pim,Van der Velde,Pastoriestraat,115,,Zaandam,22000,NL023456789B22
+A-387-073,Lotte,Bosman,Oranjelaan,120,,Delft,23000,NL012345678B23
+A-387-074,Kevin,Schouten,Veldweg,125,,Alkmaar,24000,NL098765432B24
+A-387-075,Mirjam,Kuijpers,Koninginneweg,130,,Amstelveen,25000,NL076543210B25
+A-387-076,Roy,De Ruiter,Molenstraat,135,,Gouda,26000,NL067890123B26
+A-387-077,Sandra,Voskuil,Dijkweg,140,,Roosendaal,27000,NL078901234B27
+A-387-078,Wouter,Bosch,Brinklaan,145,,Emmen,28000,NL045678901B28
+A-387-079,Nienke,Van Vliet,Beethovenstraat,150,,Hilversum,29000,NL056789012B29
+A-387-080,Jeroen,Vermeulen,Julianastraat,155,,Sneek,30000,NL034567890B30
+A-387-081,Evelien,De Wit,Prinses Beatrixlaan,160,,Vlissingen,31000,NL023456789B31
+A-387-082,Stan,Van den Berg,Rijnstraat,165,,Heerlen,32000,NL012345678B32
+A-387-083,Laura,Smeets,Hoogstraat,170,,Roermond,33000,NL098765432B33
+A-387-084,Stijn,Van der Wal,Kerklaan,175,,Dordrecht,34000,NL076543210B34
+A-387-085,Floor,Brouwer,Willemstraat,180,,Ameland,35000,NL067890123B35
+A-387-086,Timothy,Van der Heijden,Bosstraat,185,,Texel,36000,NL078901234B36
+A-387-087,Maartje,De Vos,Hoofdstraat,190,,Terschelling,37000,NL045678901B37
+A-387-088,Joris,Kroon,Stationsstraat,195,,Schiermonnikoog,38000,NL056789012B38
+A-387-089,Charlotte,Bergmans,Molenweg,200,,Ameland,39000,NL034567890B39
+A-387-090,David,Van Leeuwen,Dorpsstraat,205,,Vlieland,40000,NL023456789B40
+A-387-091,Julia,Bakker,Kerkstraat,210,,Amsterdam,41000,NL012345678B41
+A-387-092,Maarten,Jansen,Dorpstraat,215,,Rotterdam,42000,NL098765432B42
+A-387-093,Sarah,Van Dijk,Schoolweg,220,2,Utrecht,43000,NL076543210B43
+A-387-094,Lucas,Kwok,Hoofdstraat,225,,Eindhoven,44000,NL067890123B44
+A-387-095,Emma,Vos,Willemstraat,230,1,Groningen,45000,NL078901234B45
+A-387-096,Thomas,Smit,Beatrixlaan,235,,Amersfoort,46000,NL045678901B46
+A-387-097,Anna,Van der Meer,Kerkplein,240,,Haarlem,47000,NL056789012B47
+A-387-098,Noah,Hoekstra,Dorpsplein,245,,Breda,48000,NL034567890B48
+A-387-099,Lisa,Bosch,Dorpsstraat,250,,Maastricht,49000,NL023456789B49
+A-387-100,Max,Van Gogh,Binnenweg,255,,Leiden,50000,NL012345678B50 
+

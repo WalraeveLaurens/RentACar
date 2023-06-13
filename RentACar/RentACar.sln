@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.BL", "RentACar.BL\RentACar.BL.csproj", "{05BBB2DF-8BFB-4F8D-A6D5-D8BA69AF055D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{CA9778F3-E40F-4851-BC4A-E02C7D1D8A75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{6FE8BA20-897B-472D-BD72-EDAC5931B7C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.DL", "RentACar.DL\RentACar.DL.csproj", "{EE815009-BDE7-4297-BB20-6F96A36F46C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RenACar.UI", "RenACar.UI\RenACar.UI.csproj", "{E5375FEE-019F-45A2-BEC4-F1B39892EA50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACarInitialize", "RentACarInitialize\RentACarInitialize.csproj", "{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACarTest", "RentACarTest\RentACarTest.csproj", "{902D1DF9-99BF-42D8-B9EE-99DD6AC31571}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05BBB2DF-8BFB-4F8D-A6D5-D8BA69AF055D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BBB2DF-8BFB-4F8D-A6D5-D8BA69AF055D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BBB2DF-8BFB-4F8D-A6D5-D8BA69AF055D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BBB2DF-8BFB-4F8D-A6D5-D8BA69AF055D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE815009-BDE7-4297-BB20-6F96A36F46C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE815009-BDE7-4297-BB20-6F96A36F46C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE815009-BDE7-4297-BB20-6F96A36F46C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE815009-BDE7-4297-BB20-6F96A36F46C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5375FEE-019F-45A2-BEC4-F1B39892EA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5375FEE-019F-45A2-BEC4-F1B39892EA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5375FEE-019F-45A2-BEC4-F1B39892EA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5375FEE-019F-45A2-BEC4-F1B39892EA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902D1DF9-99BF-42D8-B9EE-99DD6AC31571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902D1DF9-99BF-42D8-B9EE-99DD6AC31571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902D1DF9-99BF-42D8-B9EE-99DD6AC31571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902D1DF9-99BF-42D8-B9EE-99DD6AC31571}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A94BB4AD-8EA6-423A-B067-FB2DEADCAA56} = {CA9778F3-E40F-4851-BC4A-E02C7D1D8A75}
+		{902D1DF9-99BF-42D8-B9EE-99DD6AC31571} = {6FE8BA20-897B-472D-BD72-EDAC5931B7C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B76215EE-BCD7-4109-AA1C-466565976A09}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<Window x:Class="RenACar.UI.SearchKlant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Klant Opzoeken" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Button Content="Terug naar hoofdpagina" Click="BackButton_Click" />
+
+        <Label Content="Klantnaam:" Grid.Row="1" />
+        <TextBox x:Name="SearchTextBox" Grid.Row="1" Margin="5" KeyUp="SearchTextBox_KeyUp" />
+
+        <ListView x:Name="CustomersListView" Grid.Row="2" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Klantnummer" DisplayMemberBinding="{Binding Klantnummer}" />
+                    <GridViewColumn Header="Voornaam" DisplayMemberBinding="{Binding Voornaam}" />
+                    <GridViewColumn Header="Naam" DisplayMemberBinding="{Binding Naam}" />
+                    <GridViewColumn Header="Straat" DisplayMemberBinding="{Binding Straat}" />
+                    <GridViewColumn Header="Straatnummer" DisplayMemberBinding="{Binding Straatnummer}" />
+                    <GridViewColumn Header="Busnummer" DisplayMemberBinding="{Binding Busnummer}" />
+                    <GridViewColumn Header="Plaats" DisplayMemberBinding="{Binding Plaats}" />
+                    <GridViewColumn Header="Postcode" DisplayMemberBinding="{Binding Postcode}" />
+                    <GridViewColumn Header="BTWNummer" DisplayMemberBinding="{Binding BTWNummer}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Content="Selecteren" Grid.Row="3" Margin="5" Click="SelectButton_Click" />
+    </Grid>
+</Window>
