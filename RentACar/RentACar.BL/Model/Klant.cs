@@ -9,6 +9,7 @@ namespace RentACar.BL.Model
 {
     public class Klant
     {
+        public Klant() { }
         public Klant(int klantID, string klantnummer, string voornaam, string naam, string straat, string straatnummer, string busnummer, string plaats, string postcode, string btwNummer)
         {
             ZetKlantID(klantID);
@@ -41,10 +42,10 @@ namespace RentACar.BL.Model
         public string Naam { get;  set; }
         public string Straat { get;  set; }
         public string Straatnummer { get;  set; }
-        public string Busnummer { get;  set; }
+        public string? Busnummer { get;  set; }
         public string Plaats { get;  set; }
         public string Postcode { get;  set; }
-        public string BTWNummer { get;  set; }
+        public string? BTWNummer { get;  set; }
 
         public void ZetKlantID(int klantID)
         {

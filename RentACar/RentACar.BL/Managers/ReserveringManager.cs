@@ -29,6 +29,34 @@ namespace RentACar.BL.Managers
             }
         }
 
+        public List<Reservering> GetReserveringen()
+        {
+            try
+            {
+                return reserveringRepository.GetReserveringen();
+            }
+            catch (Exception ex)
+            {
+                // Hier kun je naar behoefte omgaan met de exception
+                throw new ReserveringManagerException("Fout bij het ophalen van reserveringen.", ex);
+            }
+        }
+
+        public List<Reservering> SearchReserveringen(string searchNaam, DateTime? startDate, DateTime? endDate)
+        {
+            
+            try
+            {
+                return reserveringRepository.SearchReserveringen(searchNaam, startDate, endDate);
+            }
+            catch (Exception ex)
+            {
+                // Hier kun je naar behoefte omgaan met de exception
+                throw new ReserveringManagerException("Fout bij het zoeken van reserveringen.", ex);
+            }
+        }
+
+
         // Voer eventuele validaties uit op de reservering voordat deze wordt toegevoegd
         private void ValidateReservering(Reservering reservering)
         {

@@ -16,10 +16,13 @@
     <Compile Update="NewReservation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ReservationSearchPage.xaml.cs">
+    <Compile Update="Reservations.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SearchKlant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchReservations.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,10 +36,13 @@
     <Page Update="NewReservation.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ReservationSearchPage.xaml">
+    <Page Update="Reservations.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SearchKlant.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchReservations.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

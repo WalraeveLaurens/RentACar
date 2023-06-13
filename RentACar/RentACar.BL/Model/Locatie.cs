@@ -9,6 +9,7 @@ namespace RentACar.BL.Model
 {
     public class Locatie
     {
+        public Locatie() { }
         public int LocatieID { get; private set; }
         public string Stad { get; private set; }
 

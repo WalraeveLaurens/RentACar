@@ -9,18 +9,19 @@ namespace RentACar.BL.Model
 {
     public class Reservering
     {
+        public Reservering() { }
         public Reservering(int reserveringID, Klant klant, List<Auto> autos, Arrangement arrangement, DateTime startDatum, TimeSpan startUur, int aantalUren, Locatie startLocatie, Locatie aankomstLocatie)
         {
             ZetReserveringID(reserveringID);
             ZetKlant(klant);
             ZetAutos(autos);
-            ZetArrangement(arrangement);
             ZetStartDatum(startDatum);
             ZetStartUur(startUur);
             ZetAantalUren(aantalUren);
             ZetStartLocatie(startLocatie);
             ZetAankomstLocatie(aankomstLocatie);
             ZetSoortUur(startUur);
+            ZetArrangement(arrangement, startUur);
             BerekenEenheidsprijs();
             BerekenSubtotaal();
         }
@@ -35,23 +36,39 @@ namespace RentACar.BL.Model
             ZetStartLocatie(startLocatie);
             ZetAankomstLocatie(aankomstLocatie);
             ZetSoortUur(startUur);
-            ZetArrangement(arrangement);
+            ZetArrangement(arrangement, startUur);
             BerekenEenheidsprijs();
             BerekenSubtotaal();
         }
 
-        public int ReserveringID { get; private set; }
-        public Klant Klant { get; private set; }
-        public List<Auto> Autos { get; private set; }
-        public Arrangement Arrangement { get; private set; }
-        public DateTime StartDatum { get; private set; }
-        public TimeSpan StartUur { get; private set; }
-        public int AantalUren { get; private set; }
-        public string SoortUur { get; private set; }
-        public decimal Eenheidsprijs { get; private set; }
-        public decimal Subtotaal { get; private set; }
-        public Locatie StartLocatie { get; private set; }
-        public Locatie AankomstLocatie { get; private set; }
+        public Reservering(int reserveringID, Klant klant, List<Auto> autos, Arrangement arrangement, DateTime startDatum, TimeSpan startUur, int aantalUren, string soortUur, decimal eenheidsprijs, decimal subtotaal, Locatie startLocatie, Locatie aankomstLocatie)
+        {
+            ReserveringID = reserveringID;
+            Klant = klant;
+            Autos = autos;
+            Arrangement = arrangement;
+            StartDatum = startDatum;
+            StartUur = startUur;
+            AantalUren = aantalUren;
+            SoortUur = soortUur;
+            Eenheidsprijs = eenheidsprijs;
+            Subtotaal = subtotaal;
+            StartLocatie = startLocatie;
+            AankomstLocatie = aankomstLocatie;
+        }
+
+        public int ReserveringID { get;  set; }
+        public Klant Klant { get;  set; }
+        public List<Auto> Autos { get;  set; }
+        public Arrangement Arrangement { get;  set; }
+        public DateTime StartDatum { get;  set; }
+        public TimeSpan StartUur { get;  set; }
+        public int AantalUren { get;  set; }
+        public string SoortUur { get;  set; }
+        public decimal Eenheidsprijs { get;  set; }
+        public decimal Subtotaal { get;  set; }
+        public Locatie StartLocatie { get;  set; }
+        public Locatie AankomstLocatie { get;  set; }
 
         public void ZetReserveringID(int reserveringID)
         {
@@ -70,7 +87,7 @@ namespace RentACar.BL.Model
             Autos = autos;
         }
 
-        public void ZetArrangement(Arrangement arrangement)
+        /*public void ZetArrangement(Arrangement arrangement)
         {
             if (arrangement == null)
             {
@@ -92,14 +109,34 @@ namespace RentACar.BL.Model
                 }
             }
 
-            if (AantalUren != 7)
+            Arrangement = arrangement;
+        }*/
+
+        //test
+        public void ZetArrangement(Arrangement arrangement, TimeSpan startUur)
+        {
+            if (arrangement == null)
             {
-                throw new ReserveringException($"{arrangement.Naam}-arrangement moet een duur hebben van 7 uur");
+                throw new ReserveringException("Ongeldig Arrangement");
+            }
+
+            if (arrangement.Naam == "Nightlife")
+            {
+                if (startUur < new TimeSpan(20, 0, 0) || startUur > new TimeSpan(23, 59, 59))
+                {
+                    throw new ReserveringException("Nightlife-arrangement moet starten tussen 20:00 en 24:00");
+                }
+            }
+            else if (arrangement.Naam == "Wedding")
+            {
+                if (startUur < new TimeSpan(7, 0, 0) || startUur > new TimeSpan(14, 59, 59))
+                {
+                    throw new ReserveringException("Wedding-arrangement moet starten tussen 7:00 en 15:00");
+                }
             }
 
             Arrangement = arrangement;
         }
-
 
         public void ZetStartDatum(DateTime startDatum)
         {
@@ -127,7 +164,7 @@ namespace RentACar.BL.Model
             AankomstLocatie = aankomstLocatie ?? throw new ReserveringException("Ongeldige AankomstLocatie");
         }
 
-        private void BerekenEenheidsprijs()
+        public void BerekenEenheidsprijs()
         {
             decimal totalePrijs = 0;
 
@@ -171,7 +208,7 @@ namespace RentACar.BL.Model
             Eenheidsprijs = totalePrijs;
         }
 
-        private void BerekenSubtotaal()
+        public void BerekenSubtotaal()
         {
             decimal subtotaal = 0;
 
@@ -198,15 +235,7 @@ namespace RentACar.BL.Model
             Subtotaal = subtotaal;
         }
 
-        public override bool Equals(object obj)
-        {
-            return obj is Reservering reservering && ReserveringID == reservering.ReserveringID;
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(ReserveringID);
-        }
+        
 
         public void ZetSoortUur(TimeSpan startUur)
         {
@@ -219,7 +248,7 @@ namespace RentACar.BL.Model
                 SoortUur = "Daguren";
             }
         }
-        private bool IsNightUur(TimeSpan uur)
+        public bool IsNightUur(TimeSpan uur)
         {
             TimeSpan startNightUur = new TimeSpan(22, 0, 0);
             TimeSpan endNightUur = new TimeSpan(7, 0, 0);
@@ -234,6 +263,17 @@ namespace RentACar.BL.Model
                 return uur >= startNightUur || uur < endNightUur;
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Reservering reservering && ReserveringID == reservering.ReserveringID;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ReserveringID);
+        }
+
 
     }
 }

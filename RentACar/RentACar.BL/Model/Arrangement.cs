@@ -9,8 +9,8 @@ namespace RentACar.BL.Model
 {
     public class Arrangement
     {
-        public int ArrangementID { get; private set; }
-        public string Naam { get; private set; }
+        public int ArrangementID { get;  set; }
+        public string Naam { get;  set; }
 
         public Arrangement(int arrangementID, string naam)
         {
@@ -21,6 +21,10 @@ namespace RentACar.BL.Model
         public Arrangement(string naam)
         {
             ZetNaam(naam);
+        }
+
+        public Arrangement()
+        {
         }
 
         public void ZetArrangementID(int arrangementID)

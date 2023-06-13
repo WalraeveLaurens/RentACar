@@ -1,14 +1,15 @@
 ﻿using RentACar.BL.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RentACar.BL.Interfaces
 {
     public interface IReserveringRepository
     {
         void Add(Reservering reservering);
+        List<Reservering> GetReserveringen();
+        List<Reservering> SearchReserveringen(string searchNaam, DateTime? startDate, DateTime? endDate);
+
+
     }
 }

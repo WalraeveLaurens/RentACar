@@ -1,0 +1,68 @@
+﻿<Window x:Class="RenACar.UI.Reservations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RenACar.UI"
+        mc:Ignorable="d"
+        Title="Reservations" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Reservations" FontSize="20" FontWeight="Bold" Margin="10"/>
+
+        <Button Grid.Column="1" Content="Terug naar Hoofdscherm" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="TerugNaarHoofdscherm_Click"/>
+
+        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto">
+            <DataGrid ItemsSource="{Binding ReservationsList}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Reservation ID" Binding="{Binding ReserveringID}"/>
+                    <DataGridTemplateColumn Header="Customer">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Klant.Voornaam}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Klant.Naam}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Autos">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ItemsControl ItemsSource="{Binding Autos}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="{Binding AutoID}"/>
+                                                <TextBlock Text="-"/>
+                                                <TextBlock Text="{Binding Naam}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Arrangement" Binding="{Binding Arrangement.Naam}"/>
+                    <DataGridTextColumn Header="Start Date" Binding="{Binding StartDatum, StringFormat={}{0:dd/MM/yyyy}}"/>
+                    <DataGridTextColumn Header="Start Time" Binding="{Binding StartUur}"/>
+                    <DataGridTextColumn Header="Hour Type" Binding="{Binding SoortUur}"/>
+                    <DataGridTextColumn Header="Duration (hours)" Binding="{Binding AantalUren}"/>
+                    <DataGridTextColumn Header="Start Location" Binding="{Binding StartLocatie.Stad}"/>
+                    <DataGridTextColumn Header="End Location" Binding="{Binding AankomstLocatie.Stad}"/>
+                    <DataGridTextColumn Header="Unit Price" Binding="{Binding Eenheidsprijs, StringFormat={}{0} €}"/>
+                    <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotaal, StringFormat={}{0} €}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </Grid>
+</Window>

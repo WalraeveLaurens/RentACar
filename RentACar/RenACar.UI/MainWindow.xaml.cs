@@ -40,8 +40,15 @@ namespace RenACar.UI
 
         private void btnReservering_Click(object sender, RoutedEventArgs e)
         {
-            ReservationSearchPage reservation = new ReservationSearchPage();
-            reservation.Show();
+            Reservations reservations = new Reservations();
+            reservations.Show();
+            Close();
+        }
+
+        private void btnSearchReservering_Click(object sender, RoutedEventArgs e)
+        {
+            SearchReservations searchReservations = new SearchReservations();
+            searchReservations.Show();
             Close();
         }
     }

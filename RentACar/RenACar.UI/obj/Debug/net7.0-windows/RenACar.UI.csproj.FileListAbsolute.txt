@@ -59,5 +59,7 @@ C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0
 C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\SearchKlant.baml
 C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\NewReservation.g.cs
 C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\NewReservation.baml
-C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\ReservationSearchPage.g.cs
-C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\ReservationSearchPage.baml
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\Reservations.baml
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\Reservations.g.cs
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\SearchReservations.g.cs
+C:\Users\LaurensW\Desktop\OpdrachtenProgGev\RentACar\RenACar.UI\obj\Debug\net7.0-windows\SearchReservations.baml

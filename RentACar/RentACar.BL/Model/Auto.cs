@@ -9,12 +9,13 @@ namespace RentACar.BL.Model
 {
     public class Auto
     {
-        public int AutoID { get; private set; }
-        public string Naam { get; private set; }
-        public decimal EersteUurPrijs { get; private set; }
-        public decimal NightlifePrijs { get; private set; }
-        public decimal WeddingPrijs { get; private set; }
-        public int Bouwjaar { get; private set; }
+        public Auto() { }
+        public int AutoID { get;  set; }
+        public string Naam { get;  set; }
+        public decimal EersteUurPrijs { get;  set; }
+        public decimal NightlifePrijs { get;  set; }
+        public decimal WeddingPrijs { get;  set; }
+        public int Bouwjaar { get;  set; }
 
         public Auto(int autoID, string naam, decimal eersteUurPrijs, decimal nightlifePrijs, decimal weddingPrijs, int bouwjaar)
         {

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RenACar.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="980">
+    <Grid Margin="0,0,516,0">
         <Label x:Name="label" Content="RentACar" HorizontalAlignment="Left" Height="39" Margin="30,34,0,0" VerticalAlignment="Top" Width="80"/>
         <Button x:Name="btnKlanten" Content="Klanten" HorizontalAlignment="Left" Height="71" Margin="30,73,0,0" VerticalAlignment="Top" Width="209" Click="btnKlanten_Click"/>
         <Button x:Name="btnSearch" Content="Zoek Klant" HorizontalAlignment="Left" Height="71" Margin="30,149,0,0" VerticalAlignment="Top" Width="209" Click="btnSearch_Click"/>
         <Button x:Name="btnReservering" Content="Reserveringen" HorizontalAlignment="Left" Margin="30,225,0,0" VerticalAlignment="Top" Height="71" Width="209" Click="btnReservering_Click"/>
+        <Button x:Name="btnSearchReservering" Content="Zoek Reservering" HorizontalAlignment="Left" Margin="30,301,0,0" VerticalAlignment="Top" Height="71" Width="209" Click="btnSearchReservering_Click"/>
 
     </Grid>
 </Window>

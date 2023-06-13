@@ -106,7 +106,7 @@ namespace RenACar.UI
                 reserveringManager.AddReservering(newReservation);
 
                 MessageBox.Show("Reservering is toegevoegd.");
-                Close();
+
             }
             catch (Exception ex)
             {
